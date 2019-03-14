@@ -1,7 +1,7 @@
 {
   "name": "sota-electron",
   "productName": "SotaElectron",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -89,13 +89,9 @@
       "buildResources": "resources",
       "output": "release"
     },
-    "publish": {
-      "provider": "s3",
-      "bucket": "sota-electron",
-      "acl": "public",
-      "storageClass": "STANDARD",
-      "encryption": "AES256"
-    }
+    "publish": [
+      "github"
+    ]
   },
   "license": "MIT",
   "keywords": [
