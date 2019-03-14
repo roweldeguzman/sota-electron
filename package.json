@@ -1,7 +1,7 @@
 {
   "name": "sota-electron",
   "productName": "SotaElectron",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -37,9 +37,18 @@
     "release": "build"
   },
   "main": "./frontend/main.prod.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roweldeguzman/sota-electron.git"
+  },
+  "author": "Rowel de Guzman",
   "build": {
-    "productName": "SotaElectron",
     "appId": "com.sotamedia.SotaElectron",
+    "productName": "SotaElectron",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "type": "distribution"
+    },
     "files": [
       "frontend/dist/",
       "frontend/app.html",
@@ -80,12 +89,9 @@
       "buildResources": "resources",
       "output": "release"
     },
-    "publish": {
-      "provider": "github",
-      "owner": "sota-electron",
-      "repo": "sota-electron",
-      "private": false
-    }
+    "publish": [
+      "github"
+    ]
   },
   "license": "MIT",
   "keywords": [
@@ -154,7 +160,7 @@
     "css-loader": "^2.1.0",
     "detect-port": "^1.3.0",
     "electron": "^4.0.0",
-    "electron-builder": "^20.38.4",
+    "electron-builder": "^20.39.0",
     "electron-devtools-installer": "^2.2.4",
     "eslint": "^5.11.0",
     "eslint-config-airbnb": "^17.1.0",
