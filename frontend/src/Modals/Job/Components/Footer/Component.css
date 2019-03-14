@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 40px;
+}
+
+.pricing {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.approvedBy {
+  color: #666;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.approvedIcon {
+  color: #3ec653;
+  margin-right: 5px;
+  font-size: 15px;
+}

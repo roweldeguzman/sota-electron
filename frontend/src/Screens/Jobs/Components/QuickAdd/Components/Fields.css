@@ -1,0 +1,26 @@
+.stack{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.inputField{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-direction: row;
+  margin: 0px;
+  height: 38px;
+}
+
+.inputField div:first-child{
+  width: 320px;
+}
+
+.inputField div:last-child  {
+  width: 100%;
+}

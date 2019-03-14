@@ -1,0 +1,103 @@
+:global(._Portal_Header_bar){ z-index: 5 !important; }
+:global(._Portal_LoginScreen_Wrapper_wrapper) { z-index: 6 !important; }
+:global(.ant-layout) { background: #ffffff !important; }
+:global(.ant-form-item) { margin-bottom: 5px !important; }
+:global(.fa) { font-family: 'FontAwesome' !important; }
+:global(.m-0) { margin: 0!important }
+:global(.m-t-0) { margin-top: 0!important }
+:global(.m-b-0) { margin-bottom: 0!important }
+:global(.m-l-0) { margin-left: 0!important }
+:global(.m-r-0) { margin-right: 0!important }
+:global(.m-5) { margin: 5px!important }
+:global(.m-t-5) { margin-top: 5px!important }
+:global(.m-b-5) { margin-bottom: 5px!important }
+:global(.m-l-5) { margin-left: 5px!important }
+:global(.m-r-5) { margin-right: 5px!important }
+:global(.m-10) { margin: 10px!important }
+:global(.m-t-10) { margin-top: 10px!important }
+:global(.m-b-10) { margin-bottom: 10px!important }
+:global(.m-l-10) { margin-left: 10px!important }
+:global(.m-r-10) { margin-right: 10px!important }
+:global(.m-15) { margin: 15px!important }
+:global(.m-t-15) { margin-top: 15px!important }
+:global(.m-b-15) { margin-bottom: 15px!important }
+:global(.m-l-15) { margin-left: 15px!important }
+:global(.m-r-15) { margin-right: 15px!important }
+:global(.m-20) { margin: 20px!important }
+:global(.m-t-20) { margin-top: 20px!important }
+:global(.m-b-20) { margin-bottom: 20px!important }
+:global(.m-l-20) { margin-left: 20px!important }
+:global(.m-r-20) { margin-right: 20px!important }
+:global(.m-25) { margin: 25px!important }
+:global(.m-t-25) { margin-top: 25px!important }
+:global(.m-b-25) { margin-bottom: 25px!important }
+:global(.m-l-25) { margin-left: 25px!important }
+:global(.m-r-25) { margin-right: 25px!important }
+:global(.m-30) { margin: 30px!important }
+:global(.m-t-30) { margin-top: 30px!important }
+:global(.m-b-30) { margin-bottom: 30px!important }
+:global(.m-l-30) { margin-left: 30px!important }
+:global(.m-r-30) { margin-right: 30px!important }
+:global(.p-0) { padding: 0!important }
+:global(.p-t-0) { padding-top: 0!important }
+:global(.p-b-0) { padding-bottom: 0!important }
+:global(.p-l-0) { padding-left: 0!important }
+:global(.p-r-0) { padding-right: 0!important }
+:global(.p-5) { padding: 5px!important }
+:global(.p-t-5) { padding-top: 5px!important }
+:global(.p-b-5) { padding-bottom: 5px!important }
+:global(.p-l-5) { padding-left: 5px!important }
+:global(.p-r-5) { padding-right: 5px!important }
+:global(.p-10) { padding: 10px!important }
+:global(.p-t-10) { padding-top: 10px!important }
+:global(.p-b-10) { padding-bottom: 10px!important }
+:global(.p-l-10) { padding-left: 10px!important }
+:global(.p-r-10) { padding-right: 10px!important }
+:global(.p-15) { padding: 15px!important }
+:global(.p-t-15) { padding-top: 15px!important }
+:global(.p-b-15) { padding-bottom: 15px!important }
+:global(.p-l-15) { padding-left: 15px!important }
+:global(.p-r-15) { padding-right: 15px!important }
+:global(.p-20) { padding: 20px!important }
+:global(.p-t-20) { padding-top: 20px!important }
+:global(.p-b-20) { padding-bottom: 20px!important }
+:global(.p-l-20) { padding-left: 20px!important }
+:global(.p-r-20) { padding-right: 20px!important }
+:global(.p-25) { padding: 25px!important }
+:global(.p-t-25) { padding-top: 25px!important }
+:global(.p-b-25) { padding-bottom: 25px!important }
+:global(.p-l-25) { padding-left: 25px!important }
+:global(.p-r-25) { padding-right: 25px!important }
+:global(.p-30) { padding: 30px!important }
+:global(.p-t-30) { padding-top: 30px!important }
+:global(.p-b-30) { padding-bottom: 30px!important }
+:global(.p-l-30) { padding-left: 30px!important }
+:global(.p-r-30) { padding-right: 30px!important }
+
+:global(.text-right) { text-align: right !important; }
+:global(.text-left) { text-align: left !important; }
+:global(.text-center) { text-align: center !important; }
+
+:global(.ellipsis) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 94%;
+}
+
+:global(.ant-table) td { white-space: nowrap; }
+
+:global(.editable-cell) {
+  position: relative;
+}
+
+:global(.editable-cell-value-wrap) {
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+:global(.editable-row:hover .editable-cell-value-wrap) {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 4px 11px;
+}

@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.lane {
+  border: 1px solid #444;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px;
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 10px;
+}

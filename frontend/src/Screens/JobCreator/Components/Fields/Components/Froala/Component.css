@@ -1,0 +1,20 @@
+:global(.contentEditor .fr-wrapper ol) {
+  counter-reset: item;
+}
+
+:global(.contentEditor .fr-wrapper ol > li) {
+  display: block;
+}
+
+:global(.contentEditor .fr-wrapper ol > li:before) {
+  content: counters(item, ".") ". ";
+  counter-increment: item
+}
+
+:global(.contentEditor .fr-wrapper p) {
+  text-align: justify;
+}
+
+.wrapper {
+  padding-bottom: 50px;
+}

@@ -1,0 +1,8 @@
+.panel {
+  width: 450px;
+  height: 100%;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

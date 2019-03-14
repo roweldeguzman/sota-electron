@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+}
+
+.text {
+  letter-spacing: 0.5px;
+}
