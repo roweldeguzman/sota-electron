@@ -110,16 +110,13 @@ app.on('ready', async () => {
   })
   
   autoUpdater.on('download-progress', (progressObj) => {
-    // let log_message = "Download speed: " + progressObj.bytesPerSecond
-    // log_message = log_message + ' - Downloaded ' + progressObj.percent + '%'
-    // log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')'
-    // dispatch(log_message)
-  
+      
     mainWindow.webContents.send('download-progress', progressObj.percent)
   
   })
   
   autoUpdater.on('update-downloaded', () => {
+    // autoUpdater.quitAndInstall();
     dispatch('Update downloaded')
   })
 
