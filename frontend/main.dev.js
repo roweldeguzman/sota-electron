@@ -34,6 +34,11 @@ const installExtensions = async () => {
   ).catch(console.log);
 };
 
+
+const dispatch = (data) => {
+  mainWindow.webContents.send('message', data)
+}
+
 /**
  * Add event listeners...
  */
@@ -72,6 +77,8 @@ app.on('ready', async () => {
       mainWindow.show();
       mainWindow.focus();
     }
+    autoUpdater.checkForUpdatesAndNotify()
+    mainWindow.webContents.send('version', app.getVersion())
   });
 
   mainWindow.on('closed', () => {
@@ -83,5 +90,37 @@ app.on('ready', async () => {
 
   // Remove this if your app does not use auto updates
   // eslint-disable-next-line
-  new AppUpdater();
+  // new AppUpdater();
+
+  autoUpdater.on('checking-for-update', () => {
+    dispatch('Checking for update...')
+  })
+  
+  autoUpdater.on('update-available', () => {
+    dispatch('Update available.')
+  })
+  
+  autoUpdater.on('update-not-available', () => {
+    dispatch('Update not available.')
+  })
+  
+  autoUpdater.on('error', (err) => {
+    dispatch(`Error in auto-updater. ${err}`)
+    
+  })
+  
+  autoUpdater.on('download-progress', (progressObj) => {
+    // let log_message = "Download speed: " + progressObj.bytesPerSecond
+    // log_message = log_message + ' - Downloaded ' + progressObj.percent + '%'
+    // log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')'
+    // dispatch(log_message)
+  
+    mainWindow.webContents.send('download-progress', progressObj.percent)
+  
+  })
+  
+  autoUpdater.on('update-downloaded', () => {
+    dispatch('Update downloaded')
+  })
+
 });
