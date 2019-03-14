@@ -1,0 +1,53 @@
+.pageControl {
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  width: 60px;
+  height: 32px;
+  line-height: 30px !important;
+}
+
+.customPagination {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.customPagination :global(.ant-pagination-prev) {
+  margin-right: 0 !important;
+}
+.customPagination :global(.ant-pagination-prev) a {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.customPagination :global(.ant-pagination-item){
+  border-radius: 0 !important;
+  margin-right: 0 !important;
+  border-left: none !important;
+}
+
+.customPagination :global(.ant-pagination-item-active){
+  background-color: #0088e4 !important;
+  pointer-events: none;
+}
+
+.customPagination :global(.ant-pagination-item-active) a{
+  color: #fff !important;
+}
+
+.customPagination :global(.ant-pagination-next) a {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0 !important;
+  border-left: none !important;
+}
+
+.customPagination :global(.ant-pagination-item:hover),
+.customPagination :global(.ant-pagination-next:hover) a,
+.customPagination :global(.ant-pagination-prev:hover) a{
+  border-color: #d9d9d9 !important;
+  background-color: #eee !important;
+}

@@ -1,0 +1,7 @@
+.list > div {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.list > div:last-child {
+  border-bottom: none;
+}

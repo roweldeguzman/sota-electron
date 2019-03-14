@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.left {
+  flex: 1
+}
+
+.right {
+
+}
+
+.backLink {
+  margin-bottom: 10px;
+}
+
+.backLink a {
+  color: #999 !important;
+}
+
+.backLink a:hover {
+  color: #777 !important;
+}
+
+.heading {
+  flex: 1;
+  margin: 0px;
+}

@@ -1,0 +1,4 @@
+{
+  "mainWindowUrl": "./frontend/app.html",
+  "appPath": "."
+}
