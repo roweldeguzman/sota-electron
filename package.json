@@ -225,7 +225,7 @@
     "font-awesome": "^4.7.0",
     "froala-editor": "^2.9.3",
     "history": "^4.7.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "numeral": "^2.0.6",
     "prop-types": "^15.7.2",
     "query-string": "^6.3.0",
